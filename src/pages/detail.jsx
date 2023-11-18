@@ -10,7 +10,7 @@ const Detail = () => {
     const [discountedPrice, setDiscountedPrice] = useState(0);
     
     const getItemData = useCallback(async () => {
-        const response = await fetch(`https://blooming-escarpment-05728-b28dbc8e4d79.herokuapp.com/api/items/${id}`);
+        const response = await fetch(`https://bazaruniversal-backend.onrender.com/api/items/${id}`);
         const data = await response.json();
         
         setItem(data.data);

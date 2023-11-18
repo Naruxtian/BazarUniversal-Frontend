@@ -11,7 +11,7 @@ const SearchRes = () => {
 
   const getSearchData = useCallback(async () => {
     if (searchValue !== null || searchValue !== '' || searchValue !== undefined) {
-      const response = await fetch(`https://blooming-escarpment-05728-b28dbc8e4d79.herokuapp.com/api/items?q=${searchValue}`);
+      const response = await fetch(`https://bazaruniversal-backend.onrender.com/api/items?q=${searchValue}`);
       const data = await response.json();
 
       setSearchData(data);
